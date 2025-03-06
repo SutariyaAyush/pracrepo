@@ -84,3 +84,5 @@ gists - add some code from repo and share it with anyone..don't need to refer wh
 
 we can host a web page using github but it's need to be only static and made from html css , and js
 
+git push origin --delete branch1  --- dlt branch from remote branch from github repo
+
