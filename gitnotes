@@ -1,0 +1,86 @@
+git init 
+
+git status - to verify whether  git repo is installed or not so whenever you installing a new repo just verify using git status
+
+rf -rm .git to delete the git repo
+
+git log - give details about commit that who done that commit and when that commit dione 
+
+git commite --amend   undo commit.. it's working only for till one commit
+git log --online   only show one line msg
+
+head is refer the current location that  we are viewing or reading in our repo
+git branch <branchname>
+
+git switch      ||       or  git checkout <branchname>
+
+git switch -c <branchname>  create new branch and seitch that branch
+
+if i change into this branch and didn't make a commit and switched to the other branch and check the status it will return same which we didn't commint in prev branch
+
+git branch  to see how many branch we have
+
+git branch -D branchname     to delete the branch first checkout from that branch and run this command
+
+git branch -m newbranchname   first open that branch we need to rename and then run command
+
+git commit -a -m "heelo"  -a is automatically stage the untracked file we don't need to run git add .
+
+git merge branchname   first checkout that branch to that brach where we want to merge and after this command run still brach is present
+                        only commit and content of that branch is combined   
+
+merge conflict --- two people add change for a same line in same file before merge.then conflict will produce to resolve conflict we need to encounter that manually
+conflict solve kari ne add and commit
+branch 1 ma chang karyo same jagya a branch2 ma change karyo pachhi merge no command use karu to conflict aavse
+
+git diff   is used for list that all changes which are not staged for commit
+
+git diff HEAD   is used for list that all changes which are not staged for commit and also if we staged the final but not commit the files that also display
+
+git diff HEAD filepath     to see only specific file
+
+git diff HEAD branch1..branch2
+
+git diff commit1..commit2   
+
+git diff --staged 
+
+
+
+
+github is a hosting platform where we host our git repo
+
+git clone URL   for cloning repo from github..make sure that you are not in any git repo using git status..we can use other than github URL
+
+ssh key comes in pair pu-is on remote sserver and pv- local server.... use of ssh Secure Authentication before connectiong with remote server
+passwordless login...we don't need enter pwd every time
+
+git remote -v   to list all remotes url 
+origin refer only name for URL
+
+git push origin localbrach:remotebranch  it willpush local brach code into remote branch code
+
+git push -u origin main   -u will help to use directly like git push instead whole command..it will always push code into main branch
+
+
+
+The command git switch - is used in Git to switch back to the previous branch you were on
+
+when we clone repo and run command for listing branch it's show only main branch but if run git branch -r then it's list all the branch
+and we can directly switch between those branch with the help of git switch branchname bcz github give automatic functionalty to make local branch with remote branch refering
+other\wise we need to write command for tracking branch : git checkout --track origin/banchname
+
+git pull origin <branch-name>  pull specific branch
+The git pull command will merge the remote branch into whatever local branch you're currently on
+Make sure you're on the correct local branch before pulling
+
+git fetch 
+git fetch origin <branch-name>
+If you only want to fetch the remote branch without merging it into your local branch, you can use git fetch
+
+sometime conflict happen on pull time also
+
+gists - add some code from repo and share it with anyone..don't need to refer whole repo
+
+we can host a web page using github but it's need to be only static and made from html css , and js
+
