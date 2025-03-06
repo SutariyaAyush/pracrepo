@@ -15,6 +15,8 @@ git branch <branchname>
 git switch      ||       or  git checkout <branchname>
 
 git switch -c <branchname>  create new branch and seitch that branch
+git checkout -b branchname  --create new branch and switch
+
 
 if i change into this branch and didn't make a commit and switched to the other branch and check the status it will return same which we didn't commint in prev branch
 
@@ -86,3 +88,6 @@ we can host a web page using github but it's need to be only static and made fro
 
 git push origin --delete branch1  --- dlt branch from remote branch from github repo
 
+git reset --soft HEAD~1  ----when want to delete head commit
+
+git rebase -i HEAD~3  ---select 3rd commit from the HEAD
