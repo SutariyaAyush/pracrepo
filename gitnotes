@@ -90,4 +90,4 @@ git push origin --delete branch1  --- dlt branch from remote branch from github 
 
 git reset --soft HEAD~1  ----when want to delete head commit
 
-git rebase -i HEAD~3  ---select 3rd commit from the HEAD
+git rebase -i HEAD~3  ---list out 2rd and onward commits from the HEAD
