@@ -101,3 +101,16 @@ git stash apply  --we can use that stash change to anywhere in any bracnh
 git stash  list 
 git stash apply stashname   --which is given in list 
 git stash drop stashname
+
+cat .git/HEAD --to check head position
+git checkout commithashvalue 
+git switch master
+git chechout HEAD~1
+git checkout HEAD filename  --last commit sathe comapare karse and changes ne remove kari ne show karse
+git checkout -- file1 file2 file3....   it will undo changes 
+git restore filename
+git restore --source HEAD~2 filename
+git restore --staged filename  --staged file ne unstaged karva
+git reset commithash  --it will dlt above commit from the given commithash but we not loose content 
+git reset --hard commithash  --also delete content
+git revert commithash   --it remove content of this commit but it not remove commit from thr branch it will create new commit
