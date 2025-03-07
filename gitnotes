@@ -103,9 +103,9 @@ git stash apply stashname   --which is given in list
 git stash drop stashname
 
 cat .git/HEAD --to check head position
-git checkout commithashvalue 
+git checkout commithashvalue  --j commit par javu hoi teno hashcode
 git switch master
-git chechout HEAD~1
+git chechout HEAD~1  --last commit par jai skia
 git checkout HEAD filename  --last commit sathe comapare karse and changes ne remove kari ne show karse
 git checkout -- file1 file2 file3....   it will undo changes 
 git restore filename
