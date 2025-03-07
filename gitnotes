@@ -106,9 +106,9 @@ cat .git/HEAD --to check head position
 git checkout commithashvalue  --j commit par javu hoi teno hashcode
 git switch master
 git chechout HEAD~1  --last commit par jai skia
-git checkout HEAD filename  --last commit sathe comapare karse and changes ne remove kari ne show karse..only for unstaged 
+git checkout HEAD filename  --last commit sathe comapare karse and changes ne remove kari ne show karse..only for unstaged changes
 git checkout -- file1 file2 file3....   it will undo changes 
-git restore filename
+git restore filename ..only for unstaged changes
 git restore --source HEAD~2 filename
 git restore --staged filename  --staged file ne unstaged karva
 git reset commithash  --it will dlt above commit from the given commithash but we not loose content 
