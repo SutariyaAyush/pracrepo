@@ -15,6 +15,8 @@ git branch <branchname>
 git switch      ||       or  git checkout <branchname>
 
 git switch -c <branchname>  create new branch and seitch that branch
+git checkout -b branchname  --create new branch and switch
+
 
 if i change into this branch and didn't make a commit and switched to the other branch and check the status it will return same which we didn't commint in prev branch
 
@@ -84,3 +86,18 @@ gists - add some code from repo and share it with anyone..don't need to refer wh
 
 we can host a web page using github but it's need to be only static and made from html css , and js
 
+git push origin --delete branch1  --- dlt branch from remote branch from github repo
+
+git reset --soft HEAD~1  ----when want to delete head commit
+
+git rebase -i HEAD~3  ---list out 2rd and onward commits from the HEAD
+
+stashing -- when we update brach and didn't commit that changes then changes come with us into the other branch if there is no conflict present 
+            and if conflict is there than it will not allow us to switch branch
+
+git stash  -- when we need to switch branch urgently and we doesn't want to take over changes in other branch into that branch then we use this command
+git stash pop  --when our work is dine than switch back our original branch than we use this command to retrive all change that we made
+git stash apply  --we can use that stash change to anywhere in any bracnh
+git stash  list 
+git stash apply stashname   --which is given in list 
+git stash drop stashname
