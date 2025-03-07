@@ -26,7 +26,7 @@ git branch -D branchname     to delete the branch first checkout from that branc
 
 git branch -m newbranchname   first open that branch we need to rename and then run command
 
-git commit -a -m "heelo"  -a is automatically stage the untracked file we don't need to run git add .
+git commit -am "heelo"  -a is automatically stage the untracked file we don't need to run git add .
 
 git merge branchname   first checkout that branch to that brach where we want to merge and after this command run still brach is present
                         only commit and content of that branch is combined   
@@ -58,6 +58,8 @@ ssh key comes in pair pu-is on remote sserver and pv- local server.... use of ss
 passwordless login...we don't need enter pwd every time
 
 git remote -v   to list all remotes url 
+git remote remove <remote-name>
+git remote rename <old-remote-name> <new-remote-name>
 origin refer only name for URL
 
 git push origin localbrach:remotebranch  it willpush local brach code into remote branch code
@@ -114,3 +116,21 @@ git restore --staged filename  --staged file ne unstaged karva
 git reset commithash  --it will dlt above commit from the given commithash but we not loose content 
 git reset --hard commithash  --also delete content
 git revert commithash   --it remove content of this commit but it not remove commit from thr branch it will create new commit
+majorrel.minorrel.patchrel
+git tag  ---to retrive all tag which is attach with repo
+git tag -l "*log*"    ---wild card charater ...it will find those tag who include log
+git checkout tagname
+git diff tag1 tag2
+git tag tagname   --create new tag it given to current head position 
+git tag -a tagname --annotated tag
+git show tagname  --details  about tag
+git tag tagname commithash    ---
+git tag tagname commithash -f   ---replace existed tag to this commit
+git tag -d tagname
+git push remote tagname
+git push remote --tag   to push all tag
+
+git has key-value pair it genrate 40 char length key for a perticular content
+ git hash-object file   ---creating hash code for msg
+git cat-file -p hashcode or 4 char of hashcode     ---gives us original msg
+git cherry-pick <commit-hash>
