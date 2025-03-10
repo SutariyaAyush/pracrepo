@@ -1,0 +1,33 @@
+date
+ls 
+mkdir foldername
+ls -l   details about mkdir
+pwd    present working directory
+touch filename  creating new file
+cd 
+cd ..
+rm filename    ---dlt file
+rmdir foldername  ---dlt directory
+echo "hello" > filename  ---write content into file
+cat filename    ---printing file content on terminal
+zcat zipfilename  ---to content inside zipfile
+head filename  ---above lines
+tail filename ---last lines 
+tail -f filename  ---new lines update thayeli hoi a
+less , more
+cp filename foldername/   ---copy file to given folder
+   source->path
+cp -r folder/ folder/
+mv filename pathname
+mv folder/ newfolder/   --rename the directory
+wc filename   ---count line world bytes
+ln   --linking one file with another location for example creating icon shortcut on screen
+        two type of liking first is softlink(if source will delete than softlinked file will also delete) and hardlink (it will remains as it is if main file is deleted)
+cut filename 1-4   ---return 1 to 4 bytes from the file
+sort filename
+diff file1 file2   ---to check difference between them
+man commandname  ---to know more details about that command
+
+
+
+https://www.codewithharry.com/blogpost/50-linux-commands/

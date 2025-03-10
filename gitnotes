@@ -14,9 +14,8 @@ git branch <branchname>
 
 git switch      ||       or  git checkout <branchname>
 
-git switch -c <branchname>  create new branch and seitch that branch
+git switch -c <branchname>  create new branch and switch that branch
 git checkout -b branchname  --create new branch and switch
-
 
 if i change into this branch and didn't make a commit and switched to the other branch and check the status it will return same which we didn't commint in prev branch
 
@@ -45,7 +44,7 @@ git diff HEAD branch1..branch2
 
 git diff commit1..commit2   
 
-git diff --staged 
+git diff --staged
 
 
 
@@ -58,6 +57,7 @@ ssh key comes in pair pu-is on remote sserver and pv- local server.... use of ss
 passwordless login...we don't need enter pwd every time
 
 git remote -v   to list all remotes url 
+git remote add origin git@github.com:User/UserRepo.git
 git remote remove <remote-name>
 git remote rename <old-remote-name> <new-remote-name>
 origin refer only name for URL
@@ -88,7 +88,7 @@ gists - add some code from repo and share it with anyone..don't need to refer wh
 
 we can host a web page using github but it's need to be only static and made from html css , and js
 
-git push origin --delete branch1  --- dlt branch from remote branch from github repo
+git push origin --delete branch1  --- dlt  remote branch from github repo
 
 git reset --soft HEAD~1  ----when want to delete head commit
 
@@ -102,8 +102,8 @@ git stash pop  --when our work is dine than switch back our original branch than
 git stash apply  --we can use that stash change to anywhere in any bracnh
 git stash  list 
 git stash apply stashname   --which is given in list 
-git stash drop stashname
-
+git stash drop stashname   
+ 
 cat .git/HEAD --to check head position
 git checkout commithashvalue  --j commit par javu hoi teno hashcode
 git switch master
@@ -121,7 +121,7 @@ git tag  ---to retrive all tag which is attach with repo
 git tag -l "*log*"    ---wild card charater ...it will find those tag who include log
 git checkout tagname
 git diff tag1 tag2
-git tag tagname   --create new tag it given to current head position 
+git tag tagname   --create new tag it given to current head position
 git tag -a tagname --annotated tag
 git show tagname  --details  about tag
 git tag tagname commithash    ---
@@ -131,6 +131,10 @@ git push remote tagname
 git push remote --tag   to push all tag
 
 git has key-value pair it genrate 40 char length key for a perticular content
- git hash-object file   ---creating hash code for msg
+git hash-object file   ---creating hash code for msg
 git cat-file -p hashcode or 4 char of hashcode     ---gives us original msg
-git cherry-pick <commit-hash>
+git cherry-pick <commit-hash> 
+
+
+git fetch
+git log demo2..origin/demo2   to see what chages happend 
