@@ -1,0 +1,43 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "start:pro": "NODE_ENV=production nodemon index.js",
+    "debug": "ndb index.js"
+    },
+  "author": "ayush",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "html-to-text": "^9.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "luxon": "^3.5.0",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.2",
+    "nbd": "^0.2.2",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
+    "sharp": "^0.33.5",
+    "stripe": "^17.7.0",
+    "validator": "^13.12.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "prettier": "^3.5.3"
+  }
+}
